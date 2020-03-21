@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
+import './src/scss/test.scss';
+
 class Form extends Component {
   constructor() {
     super();
@@ -23,13 +25,7 @@ class Form extends Component {
 
   render() {
     return (
-      <form>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+      <h1>Hello world!</h1>
     );
   }
 }
