@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/webpack",
-    "dev": "./node_modules/.bin/webpack-dev-server --inline --hot --open"
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot --open"
   },
   "browserslist": [
     "> 1%",
