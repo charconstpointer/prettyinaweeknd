@@ -5,7 +5,7 @@ import Header from "./components/Header";
 const GameView = (props) => {
 
     return <div className={"container-grid"}>
-        <Sidebar image={null}/>
+        <Sidebar image={props.image}/>
         <Header header={"Rozgrywka"}/>
         {props.children}
     </div>

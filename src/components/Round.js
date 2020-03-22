@@ -1,6 +1,5 @@
 import React from "react";
 //Categories images
-
 import panstwo from '../assets/categories/panstwo.png'
 import imie from '../assets/categories/imie.png'
 import miasto from '../assets/categories/miasto.png'
