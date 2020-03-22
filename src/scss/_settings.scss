@@ -1,6 +1,7 @@
 body {
   background-color: $color-background;
   min-height: 900px;
+  min-width: 1350px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,7 +14,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 1300px;
-  height: 800px;
+  height: calc(1300px * 758/1117);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -21,9 +22,25 @@ body {
   flex-direction: column;
 }
 
+.container-grid {
+  background-image: url("../assets/backgroundImage.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: calc(1300px * 758/1117);
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "sidebar header"
+   "sidebar dashboard";
+  grid-template-rows: 177px 1fr;
+  grid-template-columns: 247px 1fr;
+}
+
 .main__text {
   font-family: $font-family-gloria;
-  color: $color-text
+  color: $color-text;
 }
 
 .logo {
@@ -40,4 +57,18 @@ body {
     top: 70px;
     left: -50px;
   }
+}
+
+.sidebar {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  grid-area: sidebar;
+}
+
+.header {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  grid-area: header;
 }

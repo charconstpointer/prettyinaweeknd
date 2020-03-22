@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+
+  &__logo__container {
+    margin-right: -140px;
+  }
+
+  hr {
+    border: 1px solid $color-text;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+}
