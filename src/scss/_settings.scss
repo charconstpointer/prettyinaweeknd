@@ -1,0 +1,22 @@
+body {
+  background-color: $color-background;
+  min-height: 900px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-image: url("../assets/backgroundImage.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,36 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import {Root} from "./src/Root";
+import './src/scss/main.scss'
 
-import './src/scss/test.scss';
+const App = () => {
 
-class Form extends Component {
-  constructor() {
-    super();
+    return <Root/>
+};
 
-    this.state = {
-      value: ""
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    const { value } = event.target;
-    this.setState(() => {
-      return {
-        value
-      };
-    });
-  }
-
-  render() {
-    return (
-      <h1>Hello world!</h1>
-    );
-  }
-}
-
-export default Form;
-
-const wrapper = document.getElementById("app");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+const app = document.getElementById("app");
+app ? ReactDOM.render(<App />, app) : false;
