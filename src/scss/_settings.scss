@@ -20,3 +20,24 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.main__text {
+  font-family: $font-family-gloria;
+  color: $color-text
+}
+
+.logo {
+  &__title {
+    margin-left: 100px;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__pencil {
+    width: 750px;
+    position: absolute;
+    top: 70px;
+    left: -50px;
+  }
+}
