@@ -24,12 +24,12 @@
     padding: 5px 10px;
     height: 100%;
     background-color: transparent;
-    border: 1px solid rgba($color-text, 0.2);
-    font-size: 22px;
+    border: none;
+    font-size: 25px;
     font-family: $font-family-gloria;
 
     &:focus {
-      border: 1px solid rgba($color-text, 1);
+      outline: none;
     }
   }
 }
