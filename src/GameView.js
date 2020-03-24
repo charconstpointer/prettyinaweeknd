@@ -6,7 +6,7 @@ const GameView = (props) => {
 
     return <div className={"container-grid"}>
         <Sidebar image={props.image}/>
-        <Header header={"Rozgrywka"}/>
+        <Header header={props.header}/>
         {props.children}
     </div>
 };
