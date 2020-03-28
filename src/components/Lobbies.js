@@ -19,7 +19,8 @@ const Lobbies = () => {
             players: 2,
             owner: "Zakochani"
         }
-    ]
+    ];
+
     return <ul className={"lobbies"}>
         <li className={"lobbies__row lobbies__main__row"}>
             <span className={"lobbies__col__1 main__text"}>
