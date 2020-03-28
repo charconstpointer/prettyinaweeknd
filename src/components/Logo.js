@@ -8,7 +8,6 @@ const Logo = ({scale}) => {
         <img src="" alt="Map" className="logo__map"/>
         <img src={pencil} alt="Pencil" className="logo__pencil"/>
     </div>
-
 };
 
 export default Logo

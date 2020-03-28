@@ -1,17 +1,16 @@
 import React from 'react'
 
-
 const Gamesettings = (props) => {
 
     const generateButtons = (quantity, name) => {
         const buttons = []
+
         for (let i = 1; i <= quantity; i++) {
             buttons.push(<div className={'creategame__checkboxes'}>
-                <input  type={'radio'} name={name} value={i} className={'creategame__buttons main__text'}/>
-                <span className={'checkmark'}/>
-                <label className={"main__text"}>{i}</label>
-                </div>
-                )
+                    <input  type={'radio'} name={name} value={i} className={'creategame__buttons main__text'}/>
+                    <span className={'checkmark'}/>
+                    <label className={"main__text"}>{i}</label>
+                </div>)
         }
 
         return buttons
@@ -37,6 +36,5 @@ const Gamesettings = (props) => {
         <button className={"creategame__accept main__text bold"}>Stwórz Pokój</button>
     </div>
 };
-
 
 export default Gamesettings

@@ -43,5 +43,9 @@
     font-weight: bold;
     cursor: pointer;
     outline: none;
+
+    &:hover {
+      color: $color-hover;
+    }
   }
 }

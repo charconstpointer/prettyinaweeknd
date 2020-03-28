@@ -17,7 +17,6 @@ const Header = ({header, show}) => {
             <Logo scale={0.5}/>
         </div>
     </div>
-
 };
 
 export default Header

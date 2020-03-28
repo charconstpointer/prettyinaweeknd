@@ -14,7 +14,6 @@ const Menu = () => {
             Nowa gra
         </Link>
     </div>
-
 };
 
 export default Menu

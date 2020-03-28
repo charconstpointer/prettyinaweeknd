@@ -1,6 +1,5 @@
 import React from 'react'
-import Category from "./Category";
-
+import Category from "./Category"
 import panstwo from '../../assets/categories/panstwo.png'
 import imie from '../../assets/categories/imie.png'
 import miasto from '../../assets/categories/miasto.png'
@@ -47,7 +46,6 @@ const categories = [
 
 const PickCategory = () => {
 
-
     return <div className={'creategame__categories main__text'}>
         <h3>Wybierz kategorie:</h3>
         {
@@ -55,6 +53,5 @@ const PickCategory = () => {
         }
     </div>
 };
-
 
 export default PickCategory
