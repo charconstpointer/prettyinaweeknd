@@ -1,0 +1,72 @@
+.creategame {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__settings {
+    flex-grow: 1;
+    margin-left: 50px;
+  }
+
+  &__flex {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__option {
+    width: 160px;
+    font-size: 20px;
+  }
+
+  &__checkboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__buttons:checked ~ .checkmark {
+    position: absolute;
+    display: block;
+    background-image: url("../assets/buttonBorder.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__room {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  &__room__input {
+    font-size: 20px;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  &__accept {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+}

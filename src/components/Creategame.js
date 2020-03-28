@@ -1,10 +1,15 @@
 import React from 'react'
+import PickCategory from "./root/PickCategory";
+import Gamesettings from "./root/GameSettings";
 
 
 const Creategame = () => {
 
 
-    return <h1>Creategame</h1>
+    return <div className={'creategame'}>
+        <PickCategory/>
+        <Gamesettings/>
+    </div>
 }
 
 export default Creategame
