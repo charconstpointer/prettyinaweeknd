@@ -20,27 +20,27 @@ const App = () => {
         <Switch>
             <Route exact path={"/"} component={Root}/>
             <Route exact path={"/round"}>
-                <GameView image={cube} header={"Rozgrywka"}>
+                <GameView image={cube} header={"Rozgrywka"} show={true}>
                     <Round/>
                 </GameView>
             </Route>
             <Route exact path={"/standings"}>
-                <GameView image={standings} header={"Wyniki po Rundzie"}>
+                <GameView image={standings} header={"Wyniki po Rundzie"} show={true}>
                     <Standings numberOfPlayers={8}/>
                 </GameView>
             </Route>
             <Route exact path={"/creategame"}>
-                <GameView image={standings} header={"Stwórz Grę"}>
+                <GameView image={standings} header={"Stwórz Grę"} show={false}>
                     <Creategame/>
                 </GameView>
             </Route>
             <Route exact path={"/lobby"}>
-                <GameView image={standings} header={`Pokój Marian`}>
+                <GameView image={standings} header={`Pokój Marian`} show={false}>
                     <Lobby/>
                 </GameView>
             </Route>
             <Route exact path={"/lobbies"}>
-                <GameView image={standings} header={"Dostępne lobby"}>
+                <GameView image={standings} header={"Dostępne lobby"} show={false}>
                     <Lobbies/>
                 </GameView>
             </Route>
