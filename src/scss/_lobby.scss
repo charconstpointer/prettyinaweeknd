@@ -1,0 +1,89 @@
+.lobby {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+
+  &__room {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%
+  }
+
+  img {
+    margin-right: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__people {
+    padding: 20px 30px;
+    width: 320px;
+    height: calc(433/321 * 320px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url("../assets/peopleBorder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 50px;
+  }
+
+  &__chat {
+    position: relative;
+    width: 600px;
+    height: calc(481/492 * 600px);
+    background-image: url('../assets/chatBorder.png');
+    background-size: cover;
+  }
+
+  input {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-family: $font-family-gloria;
+    background: none;
+    border: none;
+    width: 95%;
+    outline: none;
+  }
+
+  &__messages {
+    background: transparent;
+    font-size: 16px;
+    font-family: $font-family-gloria;
+    color: $color-text;
+    height: 90%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
