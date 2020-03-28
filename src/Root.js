@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./components/Logo";
 import Menu from "./components/root/Menu";
+import sun from './assets/sun.png'
 
 const Root = () => {
 
@@ -9,9 +10,8 @@ const Root = () => {
             <Logo scale={1}/>
         </div>
         <Menu/>
-        <img src="" alt="" className="main__sun"/>
+        <img src={sun} alt="słoneczko" className="main__sun"/>
     </div>
 };
 
-export {Root}
-
+export { Root }

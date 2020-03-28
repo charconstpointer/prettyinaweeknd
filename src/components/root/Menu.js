@@ -1,16 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Menu = () => {
 
     return <div className="main__menu">
-        <button className="main__new main__text">
+        <Link to={'/lobbies'} className="main__new main__text"
+        >
             <span>+ </span>
             Dołącz do gry
-        </button>
-        <button className="main__join main__text">
+        </Link>
+        <Link to={'/creategame'} className="main__join main__text">
             <span>v </span>
             Nowa gra
-        </button>
+        </Link>
     </div>
 
 };
